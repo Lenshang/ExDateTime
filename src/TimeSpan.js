@@ -25,28 +25,22 @@ export default class TimeSpan{
         this.totalMilliseconds=this._totalMilliseconds;
     }
     addDays(num){
-        this._totalMilliseconds+=num*24*60*60*1000;
-        return this;
+        return new TimeSpan(this._totalMilliseconds+num*24*60*60*1000);
     }
     addHours(num){
-        this._totalMilliseconds+=num*60*60*1000;
-        return this;
+        return new TimeSpan(this._totalMilliseconds+num*60*60*1000);
     }
     addMinutes(num){
-        this._totalMilliseconds+=num*60*1000;
-        return this
+        return new TimeSpan(this._totalMilliseconds+num*60*1000);
     }
     addSeconds(num){
-        this._totalMilliseconds+=num*1000;
-        return this;
+        return new TimeSpan(this._totalMilliseconds+num*1000);
     }
     addSeconds(num){
-        this._totalMilliseconds+=num*1000;
-        return this;
+        return new TimeSpan(this._totalMilliseconds+num*1000);
     }
     addMilliseconds(num){
-        this._totalMilliseconds+=num;
-        return this;
+        return new TimeSpan(this._totalMilliseconds+num);
     }
     /**
      * 加法运算计算时间段

@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lenshang/ExDateTime.git"
+  },
   "files": [
     "dist"
   ],

@@ -37,11 +37,11 @@ export default class DateTime{
         //let now = new Date();
         let _year=obj.year?obj.year:now.getFullYear();
         let _month=obj.month?(obj.month-1):now.getMonth();
-        let _date=1
-        let _hour=0
-        let _minutes=0
-        let _seconds=0
-        let _milliseconds=0
+        let _date=obj.date?obj.date:1
+        let _hour=obj.hour?obj.hour:0
+        let _minutes=obj.minutes?obj.minutes:0
+        let _seconds=obj.seconds?obj.seconds:0
+        let _milliseconds=obj.milliseconds?obj.milliseconds:0
         let date=new Date(_year,_month,_date,_hour,_minutes,_seconds,_milliseconds);
         this._constructorDate(date);
     }

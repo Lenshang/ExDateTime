@@ -1,5 +1,5 @@
-import DateTime from "../src/DateTime.js";
-import TimeSpan from "../src/TimeSpan.js";
+import DateTime from "../src/DateTime";
+import TimeSpan from "../src/TimeSpan";
 
 var dt1=DateTime.now();
 var dt2=dt1.monthLastDay();
@@ -15,7 +15,7 @@ console.log("距离现在3天18小时10分钟前的时间是:"+DateTime.now().su
 console.log("距离现在3天18小时10分钟前的时间是:"+DateTime.now().addDays(-3).addHours(-18).addMinutes(-10).toString());
 
 var day1=DateTime.convert("2020-01-01","yyyy-MM-dd")
-var day2=new DateTime(2020,3,1);
+var day2=new DateTime(2020,3,20);
 console.log(day1>day2);
 console.log(day2>day1);
 
